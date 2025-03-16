@@ -55,7 +55,7 @@ CONFIG_SCHEMA = cv.All(
             cv.GenerateID(): cv.declare_id(Awox),
             cv.Required(CONF_MESH_NAME): cv.All(
                 cv.string_strict,
-                cv.Length(max=8),
+                cv.Length(max=16),
             ),
             cv.Required(CONF_MESH_PASSWORD): cv.All(
                 cv.string_strict,
